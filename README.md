@@ -26,7 +26,7 @@ wget https://XX
 ## Training new models
 ```bash
 sh run_train.sh
-
+```
 Arguments used to train Flickr30K models and MS-COCO models are as same as those of SCAN:
 
 For Flickr30K:
@@ -55,3 +55,4 @@ For Tencent-News:
 from vocab import Vocabulary
 import evaluation
 evaluation.evalrank("$RUN_PATH/f30k_precomp/model_best.pth.tar", data_path="$DATA_PATH", split="test")
+```
