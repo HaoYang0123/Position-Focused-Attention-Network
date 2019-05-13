@@ -3,7 +3,7 @@
 # Copyright (c) 2017 Tencent Inc. All Rights Reserved
 #
 # File: run_train.sh
-# Author: bingxinqu@tencent.com
+# Author: applehyang@tencent.com
 # Date: 2018/09/06 11:09:05
 # Brief: 
 
