@@ -110,7 +110,7 @@ def build_vocab(data_path, data_name, caption_file, threshold):
 
 def main(data_path, data_name):
     vocab = build_vocab(data_path, data_name, caption_file=annotations, threshold=4)
-    serialize_vocab(vocab, './vocab/%s_vocab_nostops.json' % data_name)
+    serialize_vocab(vocab, './vocab/%s_vocab.json' % data_name)
     print("Saved vocabulary file to ", './vocab/%s_vocab.json' % data_name)
 
 
