@@ -1,12 +1,9 @@
 # -----------------------------------------------------------
-# Stacked Cross Attention Network implementation based on
-# https://arxiv.org/abs/1803.08024.
-# "Stacked Cross Attention for Image-Text Matching"
-# Kuang-Huei Lee, Xi Chen, Gang Hua, Houdong Hu, Xiaodong He
-#
-# Writen by Kuang-Huei Lee, 2018
+# Position Focused Attention Network implementation based on 
+# another network Stacked Cross Attention Network (https://arxiv.org/abs/1803.08024)
+# the code of SCAN: https://github.com/kuanghuei/SCAN
 # ---------------------------------------------------------------
-"""SCAN model"""
+"""PFAN model"""
 
 import torch
 import torch.nn as nn
