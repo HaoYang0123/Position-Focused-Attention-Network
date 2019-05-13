@@ -24,7 +24,8 @@ wget https://XX
 ```
 
 ## Training new models
-Run run_train.sh
+```bash
+sh run_train.sh
 
 Arguments used to train Flickr30K models and MS-COCO models are as same as those of SCAN:
 
