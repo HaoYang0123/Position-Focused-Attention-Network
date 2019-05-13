@@ -24,9 +24,16 @@ wget https://XX
 ```
 
 ## Training new models
+
+To train Flickr30K and MS-COCO models:
 ```bash
 sh run_train.sh
 ```
+To train Tencent-News model:
+```bash
+sh Tencent_PFAN/run_train.sh
+```
+
 Arguments used to train Flickr30K models and MS-COCO models are as same as those of SCAN:
 
 For Flickr30K:
