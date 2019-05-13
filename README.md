@@ -15,11 +15,11 @@ We recommended the following dependencies.
 
 
 ## Download data
-Download the dataset files. We use the dataset files created by SCAN [Kuang-Huei Lee](https://github.com/kuanghuei/SCAN). The position information of images can be downloaded from XX (for Flickr30K) and XX (for MS-COCO).
+Download the dataset files. We use the dataset files created by SCAN [Kuang-Huei Lee](https://github.com/kuanghuei/SCAN). The position information of images can be downloaded from [here](https://drive.google.com/open?id=1ZiF1IoeExPcn9V9L78X6jEYuMxR96OLO) (for Flickr30K) and XX (for MS-COCO).
 The Tencent-News dataset files can be downloaded from XX.
 
 ```bash
-wget https://XX
+wget https://drive.google.com/open?id=1ZiF1IoeExPcn9V9L78X6jEYuMxR96OLO
 wget https://XX
 ```
 
