@@ -1,5 +1,5 @@
 # -----------------------------------------------------------
-# Position Focused Attention Network implementation based on 
+# Position Focused Attention Network (PFAN) implementation based on 
 # another network Stacked Cross Attention Network (https://arxiv.org/abs/1803.08024)
 # the code of SCAN: https://github.com/kuanghuei/SCAN
 # ---------------------------------------------------------------
