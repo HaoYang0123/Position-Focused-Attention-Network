@@ -19,8 +19,10 @@ Download the dataset files. We use the dataset files created by SCAN [Kuang-Huei
 The Tencent-News dataset files can be downloaded from [here](https://drive.google.com/open?id=1SiZxCMAVSmS7vegAfY6Vn7BqY4j1bLZE).
 
 ```bash
+#For Flickr30K dataset
 wget https://drive.google.com/open?id=1ZiF1IoeExPcn9V9L78X6jEYuMxR96OLO
-wget https://XX
+#For Tencent-News dataset
+wget https://drive.google.com/open?id=1SiZxCMAVSmS7vegAfY6Vn7BqY4j1bLZE
 ```
 
 ## Training new models
