@@ -258,7 +258,7 @@ def predict():
 
     sims = shard_xattn_t2i(img_embs, whole_img_embs, cap_embs, cap_lens, final_cap_embs, opt, shard_size=128)
     print "Sims (t2i)", sims
-    sims2 = shard_xattn_i2t(img_embs, cap_embs, cap_lens, opt, shard_size=128)
+    sims2 = shard_xattn_i2t(img_embs, whole_img_embs, cap_embs, cap_lens, final_cap_embs, opt, shard_size=128)
     print "Sims (i2t)", sims2
     result = {'sim_t2i':reverse_sim(sims),'sim_i2t':reverse_sim(sims2)}
     return json.dumps(result)
