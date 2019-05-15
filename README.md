@@ -31,7 +31,6 @@ To train Flickr30K and MS-COCO models:
 ```bash
 sh run_train.sh
 ```
-To train Tencent-News model:
 In order to further improve the performance of PFAN on Tencent-News dataset, the whole image feautre is also considered. The details are shown in Tencent_PFAN code:
 ```bash
 sh Tencent_PFAN/run_train.sh
