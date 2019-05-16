@@ -3,7 +3,7 @@ Position Focused Attention Network for Image-Text Matching
 
 ## Introduction
 
-This is Position Focused Attention Network, source code of position attention for Image-Text Matching (project page) from [Tencent](https://github.com/Tencent). It is built on top of the SCAN (by Kuang-Huei Lee) in PyTorch.
+This is the source code of Position Focused Attention Network, an approch for Image-Text Matching based on position attention from [Tencent](https://github.com/Tencent). It is built on top of the SCAN (by Kuang-Huei Lee) in PyTorch.
 
 ## Requirements and Installation
 We recommended the following dependencies.
