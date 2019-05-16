@@ -61,7 +61,7 @@ For Tencent-News:
 |  t-i    | `--max_violation --bi_gru --agg_func=Mean --cross_attn=t2i --lambda_softmax=9 --num_epoches=30 --lr_update=15 --learning_rate=.0002 --embed_size=512 --batch_size=128 --lambda_whole=2 `|
 |  i-t    | `--max_violation --bi_gru --agg_func=Mean --cross_attn=i2t --lambda_softmax=4 --num_epoches=30 --lr_update=15 --learning_rate=.0002 --embed_size=512 --batch_size=128 --lambda_whole=2 `|
 
-The models on Tencent-News can be downloaded from here.
+The models on Tencent-News can be downloaded from [here](https://drive.google.com/open?id=1SA2J8-m6w6HvbXyDkOtjLcD7Tw4A9hPn).
 
 ## Evaluate trained models on Flickr30K and MS-COCO
 
