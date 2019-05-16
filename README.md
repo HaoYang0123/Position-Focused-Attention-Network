@@ -61,10 +61,31 @@ For Tencent-News:
 |  t-i    | `--max_violation --bi_gru --agg_func=Mean --cross_attn=t2i --lambda_softmax=9 --num_epoches=30 --lr_update=15 --learning_rate=.0002 --embed_size=512 --batch_size=128 --lambda_whole=2 `|
 |  i-t    | `--max_violation --bi_gru --agg_func=Mean --cross_attn=i2t --lambda_softmax=4 --num_epoches=30 --lr_update=15 --learning_rate=.0002 --embed_size=512 --batch_size=128 --lambda_whole=2 `|
 
-## Evaluate trained models
+The models on Tencent-News can be downloaded from here.
+
+## Evaluate trained models on Flickr30K and MS-COCO
 
 ```python
 from vocab import Vocabulary
 import evaluation
 evaluation.evalrank("$RUN_PATH/f30k_precomp/model_best.pth.tar", data_path="$DATA_PATH", split="test")
+```
+
+## Evaluate trained models on Tencent-News
+
+First, start the server to process requests
+```bash
+sh run_server.sh # port 5091 is sentence model and port 5092 is tag model
+```
+Then, send requests to get results from the server
+```bash
+cd test_server
+python test.py dist_sentence_t2i.json sentence 5091 # to get the results using sentence model and sentence data
+python test.py dist_tag_t2i.json tag 5091 # to get the results using sentence model and tag data
+python test.py dist_tag_new_t2i.json tag 5092 # to get the results using tag model and tag data
+```
+Finally, get the MAP@1-3 and A@1-3
+```bash
+cd test_server
+python compute_map.py
 ```
