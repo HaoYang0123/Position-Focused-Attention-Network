@@ -96,11 +96,6 @@ def encode_data(model, data_loader, log_step=10, logging=print):
     max_n_word = 0
     for i, (images, boxes, captions, lengths, ids) in enumerate(data_loader):
         max_n_word = max(max_n_word, max(lengths))
-        #print(images.shape)
-        #print(captions)
-        #print(lengths)
-        #print(ids)
-        #print('--------')
 
     for i, (images, boxes, captions, lengths, ids) in enumerate(data_loader):
         # make sure val logger is used
@@ -319,8 +314,6 @@ def i2t(images, captions, caplens, sims, npts=None, return_ranks=False):
     npts = images.shape[0]
     ranks = np.zeros(npts)
     top1 = np.zeros(npts)
-    #fw = open('not_good_i2t.txt','w')
-    #fw.write('Image\tText\tRank\tTop1\tSim\tSim-top1\n')
     for index in range(npts):
         inds = np.argsort(sims[index])[::-1]
         # Score
@@ -331,9 +324,6 @@ def i2t(images, captions, caplens, sims, npts=None, return_ranks=False):
                 rank = tmp
         ranks[index] = rank
         top1[index] = inds[0]
-        #if ranks[index] != 0:
-        #    fw.write(str(index)+'\t'+str(i)+'\t'+str(ranks[index])+'\t'+str(top1[index])+'\t'+str(sims[index][i])+'\t'+str(sims[index][int(inds[0])])+'\n')
-    #fw.close()
 
     # Compute metrics
     r1 = 100.0 * len(np.where(ranks < 1)[0]) / len(ranks)
@@ -363,16 +353,11 @@ def t2i(images, captions, caplens, sims, npts=None, return_ranks=False):
     # --> (5N(caption), N(image))
     sims = sims.T
 
-    #fw = open('not_good_t2i.txt','w')
-    #fw.write('Text\tImage\tRank\tTop1\tSim\tSim-top1\n')
     for index in range(npts): # index : [0,1000)
         for i in range(5): # i : [0,5)
             inds = np.argsort(sims[5 * index + i])[::-1]
             ranks[5 * index + i] = np.where(inds == index)[0][0]
             top1[5 * index + i] = inds[0]
-            #if ranks[5 * index + i] != 0:
-            #    fw.write(str(5*index+i)+'\t'+str(index)+'\t'+str(ranks[5*index+i])+'\t'+str(top1[5*index+i])+'\t'+str(sims[5*index+i][index])+'\t'+str(sims[5*index+i][int(inds[0])]+'\n'))
-    #fw.close()
 
     # Compute metrics
     r1 = 100.0 * len(np.where(ranks < 1)[0]) / len(ranks)
