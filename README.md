@@ -71,6 +71,16 @@ import evaluation
 evaluation.evalrank("$RUN_PATH/f30k_precomp/model_best.pth.tar", data_path="$DATA_PATH", split="test")
 ```
 
+## Evaluate the position-attention model (PFAN-A) and position-only (PFAN-P) model
+|            | PFAN-P    |PFAN-A    |
+| :---------: | :-------: | :-------: |
+| i2t-1   | 66.0  | 70.0   |
+| i2t-5   | 89.4  | 91.8   |
+| i2t-10  | 94.1  | 95.0   |
+| t2i-1   | 48.6  | 50.4   |
+| t2i-5   | 76.9  | 78.7   |
+| t2i-10  | 85.1  | 86.1   |
+
 ## Evaluate trained models on Tencent-News
 
 First, start the server to process requests
