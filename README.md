@@ -21,7 +21,7 @@ The Tencent-News dataset files can be downloaded from [here](https://drive.googl
 ```bash
 #For Flickr30K dataset
 wget https://drive.google.com/open?id=1ZiF1IoeExPcn9V9L78X6jEYuMxR96OLO
-#For MS-COCO
+#For MS-COCO dataset
 wget https://drive.google.com/open?id=1DaCZxeXOCm05u-Gf-_MG_zSNKO1UxBat
 #For Tencent-News training dataset
 wget https://drive.google.com/open?id=1WKq05mhSMc2u0SLtCWkUzgmqTLx95kXR
