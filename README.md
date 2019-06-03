@@ -15,12 +15,14 @@ We recommended the following dependencies.
 
 
 ## Download data
-Download the dataset files. We use the dataset files created by SCAN [Kuang-Huei Lee](https://github.com/kuanghuei/SCAN). The position information of images can be downloaded from [here](https://drive.google.com/open?id=1ZiF1IoeExPcn9V9L78X6jEYuMxR96OLO) (for Flickr30K) and here (for MS-COCO).
+Download the dataset files. We use the dataset files created by SCAN [Kuang-Huei Lee](https://github.com/kuanghuei/SCAN). The position information of images can be downloaded from [here](https://drive.google.com/open?id=1ZiF1IoeExPcn9V9L78X6jEYuMxR96OLO) (for Flickr30K) and [here](https://drive.google.com/open?id=1DaCZxeXOCm05u-Gf-_MG_zSNKO1UxBat) (for MS-COCO). Noting that we only upload the position information and captions in MS-COCO dataset, while the image features are not uploaded because of its huge storage. The original image features can be downloaded from [SCAN](https://github.com/kuanghuei/SCAN). When using the original image features, we should reorder these samples from the sample ids or sample captions.
 The Tencent-News dataset files can be downloaded from [here](https://drive.google.com/open?id=1WKq05mhSMc2u0SLtCWkUzgmqTLx95kXR) and [here](https://drive.google.com/open?id=1dPyo2EBHQoHkqx-Dl4R7ISb8t-rVG_KK).
 
 ```bash
 #For Flickr30K dataset
 wget https://drive.google.com/open?id=1ZiF1IoeExPcn9V9L78X6jEYuMxR96OLO
+#For MS-COCO
+wget https://drive.google.com/open?id=1DaCZxeXOCm05u-Gf-_MG_zSNKO1UxBat
 #For Tencent-News training dataset
 wget https://drive.google.com/open?id=1WKq05mhSMc2u0SLtCWkUzgmqTLx95kXR
 #For Tencent-News testing dataset
