@@ -13,6 +13,7 @@ We recommended the following dependencies.
 * [NumPy](http://www.numpy.org/) (>1.12.1)
 * [TensorBoard](https://github.com/TeamHG-Memex/tensorboard_logger)
 
+![image](https://github.com/HaoYang0123/Position-Focused-Attention-Network/blob/master/workflow_figures/workflow1.jpg)
 
 ## Download data
 Download the dataset files. We use the dataset files created by SCAN [Kuang-Huei Lee](https://github.com/kuanghuei/SCAN). The position information of images can be downloaded from [here](https://drive.google.com/open?id=1ZiF1IoeExPcn9V9L78X6jEYuMxR96OLO) (for Flickr30K) and [here](https://drive.google.com/open?id=1DaCZxeXOCm05u-Gf-_MG_zSNKO1UxBat) (for MS-COCO). Noting that we only upload the position information and caption in MS-COCO dataset, while the image feature is not uploaded because of its huge storage. The original image feature can be downloaded from [SCAN](https://github.com/kuanghuei/SCAN). When using the original image features, we should reorder these samples from the sample ids or sample captions.
